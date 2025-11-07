@@ -6,7 +6,6 @@ const UserMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
   const menuRef = useRef(null)
 
-  // وقتی کلیک بیرون منو شد، بسته بشه
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
